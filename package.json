@@ -1,0 +1,48 @@
+{
+    "name": "@dedexcrypto/app",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview",
+        "lint": "eslint 'src/**/*.+(ts|tsx|js|jsx)'",
+        "format": "prettier 'src/**/*.+(ts|tsx|js|jsx)' --write",
+        "test": "vitest run --passWithNoTests",
+        "gen": "rm -rf ~/.wagmi-cli/plugins/fetch/cache && wagmi generate -c src/wagmi/config.cli.ts -r ."
+    },
+    "dependencies": {
+        "@popperjs/core": "^2.11.8",
+        "bootstrap": "^5.3.0",
+        "react": "^18.2.0",
+        "react-bootstrap": "^2.8.0",
+        "react-dom": "^18.2.0",
+        "react-router-dom": "^6.14.1",
+        "recoil": "^0.7.7",
+        "recoil-persist": "^5.1.0",
+        "viem": "^1.20.1",
+        "wagmi": "^1.4.12"
+    },
+    "devDependencies": {
+        "@testing-library/dom": "^9.3.1",
+        "@testing-library/jest-dom": "^5.16.5",
+        "@testing-library/react": "^14.0.0",
+        "@testing-library/user-event": "^14.4.3",
+        "@types/node": "^20.4.1",
+        "@types/react": "^18.2.14",
+        "@types/react-dom": "^18.2.6",
+        "@typescript-eslint/eslint-plugin": "^6.0.0",
+        "@typescript-eslint/parser": "^6.0.0",
+        "@vitejs/plugin-react": "^4.0.1",
+        "@wagmi/cli": "^1.3.0",
+        "eslint": "^8.44.0",
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-plugin-prettier": "^5.0.0",
+        "jsdom": "^22.1.0",
+        "prettier": "^3.0.0",
+        "sass": "^1.63.6",
+        "typescript": "^5.0.2",
+        "vite": "^4.4.0",
+        "vitest": "^0.33.0"
+    }
+}
